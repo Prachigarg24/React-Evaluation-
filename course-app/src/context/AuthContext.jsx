@@ -2,11 +2,11 @@ import { createContext, useState, useEffect } from "react";
 
 export const AuthContext = createContext();
 
-const DUMMY_USER = { email: "admin@example.com", password: "admin123" };
+const DUMMY_USER = { email: "prachigarg858@gmail.com", password: "prachi@123" };
 
 export function AuthProvider({ children }) {
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
-    // Check if login info exists in localStorage
+   
     const savedLogin = localStorage.getItem("isLoggedIn");
     return savedLogin === "true";
   });
